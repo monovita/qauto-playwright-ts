@@ -1,27 +1,44 @@
 {
-  "name": "qauto-playwright-ts",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/monovita/qauto-playwright-ts.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/monovita/qauto-playwright-ts/issues"
-  },
-  "homepage": "https://github.com/monovita/qauto-playwright-ts#readme",
-  "devDependencies": {
-    "@types/node": "^26.0.1",
-    "typescript": "^6.0.3"
-  }
+	"name": "qauto-playwright-ts",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist/index.js",
+		"eslint": "npx eslint --fix .",
+		"prettier": "npx prettier . --write",
+		"prepare": "husky"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/monovita/qauto-playwright-ts.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/monovita/qauto-playwright-ts/issues"
+	},
+	"homepage": "https://github.com/monovita/qauto-playwright-ts#readme",
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@playwright/test": "^1.61.1",
+		"@types/node": "^26.0.1",
+		"@typescript-eslint/eslint-plugin": "^8.62.1",
+		"@typescript-eslint/parser": "^8.62.1",
+		"eslint": "^10.6.0",
+		"eslint-plugin-playwright": "^2.10.4",
+		"globals": "^17.7.0",
+		"husky": "9.1.7",
+		"jiti": "^2.7.0",
+		"prettier": "3.9.4",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.62.1"
+	},
+	"dependencies": {
+		"axios": "^1.18.1",
+		"chalk": "^5.6.2"
+	}
 }
