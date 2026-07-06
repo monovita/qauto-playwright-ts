@@ -11,7 +11,7 @@ The generated report, showcasing insights into the results of the Playwright tes
 ## Technologies Used
 
 - **Playwright**: A versatile library tailored for browser automation with a focus on reliability.
-- **TypeScript**: //
+- **TypeScript**: A strongly typed, open-source programming language.
 - **npm**: The package manager for JavaScript.
 
 ## Project Structure
@@ -19,39 +19,44 @@ The generated report, showcasing insights into the results of the Playwright tes
 The project adopts a structured approach to maintainability and scalability. Here's an overview of the project's directory structure:
 
 ```bash
-qauto-playwright-js // TODO re-generate
+qauto-playwright-ts
 ├── Jenkinsfile
 ├── README.md
 ├── dockerfile
-├── eslint.config.mjs
+├── eslint.config.mts
 ├── helpers
 │   ├── Elements
-│   │   ├── BaseElement.js
-│   │   ├── Button.js
-│   │   └── Input.js
+│   │   ├── BaseElement.ts
+│   │   ├── Button.ts
+│   │   └── Input.ts
 │   ├── Page Objects
-│   │   ├── BasePage.js
-│   │   ├── credentials.js
-│   │   ├── fuelExpensesPage.js
-│   │   ├── garagePage.js
-│   │   ├── logInForm.js
-│   │   └── registrationForm.js
+│   │   ├── BasePage.ts
+│   │   ├── credentials.ts
+│   │   ├── fuelExpensesPage.ts
+│   │   ├── garagePage.ts
+│   │   ├── logInForm.ts
+│   │   └── registrationForm.ts
 │   └── fixtures
-│       └── userGaragePage.js
+│       └── userGaragePage.ts
 ├── package-lock.json
 ├── package.json
 ├── playwright
-├── playwright.config.js
+├── playwright-report
+├── playwright.config.ts
+├── test-results
 ├── test-results.json
-└── tests
-    ├── addCarPositiveTests.spec.js
-    ├── api
-    │   ├── addCarTestsAPI.spec.js
-    │   └── profileTestAPI.spec.js
-    ├── auth.setup.js
-    ├── logInPositiveTests.spec.js
-    ├── registrationNegativeTests.spec.js
-    └── registrationPositiveTests.spec.js
+├── tests
+│   ├── addCarPositiveTests.spec.ts
+│   ├── api
+│   │   ├── addCarTestsAPI.spec.ts
+│   │   └── profileTestAPI.spec.ts
+│   ├── auth.setup.ts
+│   ├── logInNegativeTests.spec.ts
+│   ├── logInPositiveTests.spec.ts
+│   ├── registrationNegativeTests.spec.ts
+│   └── registrationPositiveTests.spec.ts
+├── tests.md
+└── tsconfig.json
 ```
 
 ## Tests
