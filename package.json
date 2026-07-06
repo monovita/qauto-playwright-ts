@@ -8,7 +8,11 @@
 		"start": "node dist/index.js",
 		"eslint": "npx eslint --fix .",
 		"prettier": "npx prettier . --write",
-		"prepare": "husky"
+		"prepare": "husky",
+		"pw:run:prod": "ENVIRONMENT=prod npx playwright test",
+		"pw:run:staging": "ENVIRONMENT=staging npx playwright test",
+		"pw:open:prod": "ENVIRONMENT=prod npx playwright test --ui",
+		"pw:open:staging": "ENVIRONMENT=staging npx playwright test --ui"
 	},
 	"repository": {
 		"type": "git",
@@ -17,7 +21,7 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"type": "commonjs",
+	"type": "module",
 	"bugs": {
 		"url": "https://github.com/monovita/qauto-playwright-ts/issues"
 	},
@@ -39,6 +43,7 @@
 	},
 	"dependencies": {
 		"axios": "^1.18.1",
-		"chalk": "^5.6.2"
+		"chalk": "^5.6.2",
+		"dotenv": "^17.4.2"
 	}
 }
