@@ -5,6 +5,7 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+test-results.json
 
 # BELOW ARE THINGS GENERATED FOR MACOS BY gitignore.io
 # Created by https://www.toptal.com/developers/gitignore/api/macos
