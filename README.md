@@ -1,6 +1,6 @@
 # Playwright Testing Project for qauto.forstudy.space
 
-Hello! This is my testing project for [qauto.forstudy.space](https://qauto.forstudy.space/panel) using Playwright and JavaScript. I developed this project as part of my learning journey in test automation.
+Hello! This is my testing project for [qauto.forstudy.space](https://qauto.forstudy.space/panel) using Playwright and TypeScript. I developed this project as part of my learning journey in test automation.
 
 The workflow, defined in the `.github/workflows/playwright.yml` file, executes Playwright tests on specified environments and browsers. After the test execution, Playwright generates a comprehensive report detailing both passed and failed scenarios. The GitHub Actions workflow is set up to automatically publish this Playwright test report to GitHub Pages.
 
@@ -12,7 +12,7 @@ The generated report, showcasing insights into the results of the Playwright tes
 
 - **Playwright**: A versatile library tailored for browser automation with a focus on reliability.
 - **TypeScript**: A strongly typed, open-source programming language.
-- **npm**: The package manager for JavaScript.
+- **npm**: The package manager for TypeScript.
 
 ## Project Structure
 
