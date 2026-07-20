@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('API -- Profile page', () => {
-	test('User Profile is modified', async ({ page }) => {
+	test('User Profile is modified (mock)', async ({ page }) => {
 		await page.route('**/api/users/profile', async (route) => {
 			await route.fulfill({
 				status: 200,
