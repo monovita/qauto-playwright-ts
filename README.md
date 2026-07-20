@@ -41,15 +41,16 @@ qauto-playwright-ts
 ├── package-lock.json
 ├── package.json
 ├── playwright
-├── playwright-report
 ├── playwright.config.ts
-├── test-results
 ├── test-results.json
 ├── tests
 │   ├── addCarPositiveTests.spec.ts
 │   ├── api
 │   │   ├── addCarTestsAPI.spec.ts
-│   │   └── profileTestAPI.spec.ts
+│   │   ├── deleteFuelTestsAPI.spec.ts
+│   │   ├── editCarTestsAPI.spec.ts
+│   │   ├── getInstructionAPI.spec.ts
+│   │   └── mockProfileTestAPI.spec.ts
 │   ├── auth.setup.ts
 │   ├── logInNegativeTests.spec.ts
 │   ├── logInPositiveTests.spec.ts

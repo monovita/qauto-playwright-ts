@@ -88,8 +88,26 @@ The tests, located in `tests/`, aim to verify the functionality of the applicati
    - Description: Verify that a car is not added via POST /api/cars when there is invalid mileage
    - Steps: send a request with invalid mileage parameter to POST /api/cars, check that the respective error message is returned
 
-### profileTestAPI.spec.ts
+### deleteFuelTestsAPI.spec.ts
 
-1. **User Profile is modified**
+1. **Fuel is deleted API test**
+   - Description: Verify that a fuel is deleted via DELETE /api/expenses
+   - Steps: send a request with valid data to DELETE /api/expenses, check that the fuel is deleted
+
+### editCarTestsAPI.spec.ts
+
+1. **Car is edited API test**
+   - Description: Verify that a car is edited via PUT /api/cars
+   - Steps: send a request with valid data to PUT /api/cars, check that the car is edited
+
+### getInstructionAPI.spec.ts
+
+1. **Get all instructions for Porsche Cayenne**
+   - Description: Verify that all instructions are returned via GET /api/instructions
+   - Steps: send a request with valid data to GET /api/instructions, check that the instructions are returned
+
+### mockProfileTestAPI.spec.ts
+
+1. **User Profile is modified (mock)**
    - Description: Verify that a user profile can be modified
-   - Steps: send a request with valid data to POST /api/users/profile, check that the user data is modified
+   - Steps: send a request with valid data to route /api/users/profile, check that the user data is modified
