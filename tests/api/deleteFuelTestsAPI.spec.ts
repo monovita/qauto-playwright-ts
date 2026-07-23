@@ -12,12 +12,13 @@ test.describe('API -- Delete fuel positive test', () => {
 		expect(newCar.ok()).toBeTruthy();
 		const newCarResponse = await newCar.json();
 		const carId = newCarResponse.data.id;
+		const reportedAt = new Date().toISOString().split('T')[0];
 		console.log(carId);
 
 		const newFuel = await request.post(`/api/expenses/`, {
 			data: {
 				carId: carId,
-				reportedAt: '2026-07-20',
+				reportedAt: reportedAt,
 				mileage: 127,
 				liters: 11,
 				totalCost: 110,
