@@ -7,7 +7,7 @@ test.describe('LogIn positive tests', () => {
 		await expect(page).toHaveURL('/');
 	});
 
-	test('User is logedIn with valid creadentials*', async ({ page }) => {
+	test('User is logedIn with valid creadentials', async ({ page }) => {
 		const logInForm = new LogInForm(page);
 		await logInForm.userLogin(page, process.env.USERNAME ?? '', process.env.PASSWORD ?? '');
 		await expect(page).toHaveURL(`/` + `panel/garage`);

@@ -12,8 +12,8 @@ test.describe('API -- Delete fuel positive test', () => {
 		expect(newCar.ok()).toBeTruthy();
 		const newCarResponse = await newCar.json();
 		const carId = newCarResponse.data.id;
-		const reportedAt = new Date().toISOString().split('T')[0];
 		console.log(carId);
+		const reportedAt = new Date().toISOString().split('T')[0];
 
 		const newFuel = await request.post(`/api/expenses/`, {
 			data: {
