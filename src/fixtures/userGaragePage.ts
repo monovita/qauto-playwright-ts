@@ -1,6 +1,6 @@
 import { test as base, expect } from '@playwright/test';
-import { GaragePage } from '../Page Objects/garagePage';
-import { FuelExpenses } from '../Page Objects/fuelExpensesPage';
+import { GaragePage } from '../helpers/page-objects/garagePage';
+import { FuelExpenses } from '../helpers/page-objects/fuelExpensesPage';
 
 type UserGarageFixtures = {
 	userGaragePage: GaragePage;

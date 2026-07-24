@@ -1,7 +1,7 @@
 import type { Locator, Page } from '@playwright/test';
-import Button from '../Elements/Button';
-import Input from '../Elements/Input';
-import BasePage from './BasePage';
+import Button from '../helpers/Button';
+import Input from '../helpers/Input';
+import BasePage from './base-page.page';
 
 export class RegistrationForm extends BasePage {
 	constructor(page: Page) {

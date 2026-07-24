@@ -1,7 +1,7 @@
 import type { Locator, Page } from '@playwright/test';
-import BasePage from './BasePage';
-import Button from '../Elements/Button';
-import Input from '../Elements/Input';
+import BasePage from './base-page.page';
+import Button from '../helpers/Button';
+import Input from '../helpers/Input';
 
 export class FuelExpenses extends BasePage {
 	constructor(page: Page) {

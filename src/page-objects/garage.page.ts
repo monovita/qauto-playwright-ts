@@ -1,6 +1,6 @@
 import type { Locator, Page } from '@playwright/test';
-import Input from '../Elements/Input';
-import BasePage from './BasePage';
+import Input from '../helpers/Input';
+import BasePage from './base-page.page';
 
 export class GaragePage extends BasePage {
 	constructor(page: Page) {

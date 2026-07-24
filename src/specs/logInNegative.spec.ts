@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { LogInForm } from '../helpers/Page Objects/logInForm';
+import { LogInForm } from '../page-objects/logInForm.page';
 
 test.describe('LogIn negative tests', () => {
 	test.beforeEach(async ({ page }) => {
