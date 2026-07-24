@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { Credentials } from '../helpers/Page Objects/credentials';
-import { RegistrationForm } from '../helpers/Page Objects/registrationForm';
+import { Credentials } from '../page-objects/credentials.page';
+import { RegistrationForm } from '../page-objects/registrationForm.page';
 
 const credentials = new Credentials();
 

@@ -1,5 +1,5 @@
 import type { Locator, Page } from '@playwright/test';
-import BasePage from './BasePage';
+import BasePage from './base-page.page';
 
 const url = '';
 

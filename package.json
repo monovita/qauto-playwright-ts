@@ -4,8 +4,6 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "tsc",
-		"start": "node dist/index.js",
 		"eslint": "npx eslint --fix .",
 		"prettier": "npx prettier . --write",
 		"prepare": "husky",
