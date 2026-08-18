@@ -17,63 +17,55 @@ test.describe('Registration negative tests', () => {
 
 	test('Invalid First Name is entered', async ({ page }) => {
 		await registrationForm.nameField.fillAndBlur('1');
-		await expect(page.getByText('Name is invalid')).toBeVisible();
-		await expect(page.getByText('Name has to be from 2 to 20 characters long')).toBeVisible();
+		await expect(registrationForm.nameInvalid).toBeVisible();
+		await expect(registrationForm.nameCharacters).toBeVisible();
 	});
 
 	test('Null First Name is entered', async ({ page }) => {
 		await registrationForm.nameField.fillAndBlurAndClear('1');
-		await expect(page.getByText('Name required')).toBeVisible();
+		await expect(registrationForm.nameRequired).toBeVisible();
 	});
 
 	test('Invalid Last Name is entered', async ({ page }) => {
 		await registrationForm.lastNameField.fillAndBlur('1');
-		await expect(page.getByText('Last name is invalid')).toBeVisible();
-		await expect(page.getByText('Last name has to be from 2 to 20 characters long')).toBeVisible();
+		await expect(registrationForm.lastNameInvalid).toBeVisible();
+		await expect(registrationForm.lastNameCharacters).toBeVisible();
 	});
 
 	test('Null Last Name is entered', async ({ page }) => {
 		await registrationForm.lastNameField.fillAndBlurAndClear('1');
-		await expect(page.getByText('Last name required')).toBeVisible();
+		await expect(registrationForm.lastNameRequired).toBeVisible();
 	});
 
 	test('Invalid Email is entered', async ({ page }) => {
 		await registrationForm.emailField.fillAndBlur('1');
-		await expect(page.getByText('Email is incorrect')).toBeVisible();
+		await expect(registrationForm.emailIncorrect).toBeVisible();
 	});
 
 	test('Null Email is entered', async ({ page }) => {
 		await registrationForm.emailField.fillAndBlurAndClear('1');
-		await expect(page.getByText('Email required')).toBeVisible();
+		await expect(registrationForm.emailRequired).toBeVisible();
 	});
 
 	test('Invalid Password is entered', async ({ page }) => {
 		await registrationForm.passwordField.fillAndBlur('1');
-		await expect(
-			page.getByText(
-				'Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter',
-			),
-		).toBeVisible();
+		await expect(registrationForm.passwordCharacters).toBeVisible();
 	});
 
 	test('Null Password is entered', async ({ page }) => {
 		await registrationForm.passwordField.fillAndBlurAndClear('1');
-		await expect(page.getByText('Password required')).toBeVisible();
+		await expect(registrationForm.passwordRequired).toBeVisible();
 	});
 
 	test('Invalid Password is re-entered', async ({ page }) => {
 		await registrationForm.repeatPasswordField.fillAndBlur('1');
-		await expect(
-			page.getByText(
-				'Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter',
-			),
-		).toBeVisible();
+		await expect(registrationForm.passwordCharacters).toBeVisible();
 	});
 
 	test('Confirm Password validation', async ({ page }) => {
 		await registrationForm.passwordField.fill('Test1234');
 		await registrationForm.repeatPasswordField.fillAndBlur('Test12345');
-		await expect(page.getByText('Passwords do not match')).toBeVisible();
+		await expect(registrationForm.passwordMatch).toBeVisible();
 	});
 
 	test('Registration button is disabled', async ({ page }) => {

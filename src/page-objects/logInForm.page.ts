@@ -32,6 +32,10 @@ export class LogInForm extends BasePage {
 		return this._page.locator(`[class="close"]`);
 	}
 
+	get wrongEmailMessage(): Locator {
+		return this._page.getByText('Wrong email or password');
+	}
+
 	async userLogin(page: Page, username: string, password: string): Promise<void> {
 		await this.logIn.click();
 		await this.emailField.fill(username);

@@ -5,7 +5,8 @@ import { test } from '../fixtures/userGaragePage';
 
 test.describe('Add car and fuel positive tests', () => {
 	test('Car is added', async ({ page, innerFixtureAddCar }) => {
-		await expect(page.locator(`[class="car_name h2"]`).last()).toContainText(`Porsche Cayenne`);
+		const garagePage = new GaragePage(page);
+		await expect(garagePage.carItem.last()).toContainText(`Porsche Cayenne`);
 	});
 
 	test('Fuel expense is added', async ({ page, innerFixtureAddFuel }) => {
