@@ -77,7 +77,9 @@ export class RegistrationForm extends BasePage {
 	}
 
 	get passwordCharacters(): Locator {
-		return this._page.getByText('Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter');
+		return this._page.getByText(
+			'Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter',
+		);
 	}
 
 	get passwordRequired(): Locator {
@@ -87,6 +89,4 @@ export class RegistrationForm extends BasePage {
 	get passwordMatch(): Locator {
 		return this._page.getByText('Passwords do not match');
 	}
-
-	
 }
