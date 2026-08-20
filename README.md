@@ -24,38 +24,39 @@ qauto-playwright-ts
 ├── README.md
 ├── dockerfile
 ├── eslint.config.mts
-├── helpers
-│   ├── Elements
-│   │   ├── BaseElement.ts
-│   │   ├── Button.ts
-│   │   └── Input.ts
-│   ├── Page Objects
-│   │   ├── BasePage.ts
-│   │   ├── credentials.ts
-│   │   ├── fuelExpensesPage.ts
-│   │   ├── garagePage.ts
-│   │   ├── logInForm.ts
-│   │   └── registrationForm.ts
-│   └── fixtures
-│       └── userGaragePage.ts
 ├── package-lock.json
 ├── package.json
 ├── playwright
 ├── playwright.config.ts
+├── src
+│   ├── fixtures
+│   │   └── userGaragePage.ts
+│   ├── helpers
+│   │   ├── BaseElement.ts
+│   │   ├── Button.ts
+│   │   └── Input.ts
+│   ├── page-objects
+│   │   ├── app.ts
+│   │   ├── base-page.page.ts
+│   │   ├── credentials.page.ts
+│   │   ├── fuelExpenses.page.ts
+│   │   ├── garage.page.ts
+│   │   ├── logInForm.page.ts
+│   │   └── registrationForm.page.ts
+│   ├── specs
+│   │   ├── addCarPositive.spec.ts
+│   │   ├── auth.setup.ts
+│   │   ├── logInNegative.spec.ts
+│   │   ├── logInPositive.spec.ts
+│   │   ├── registrationNegative.spec.ts
+│   │   └── registrationPositive.spec.ts
+│   └── specsAPI
+│       ├── addCarAPI.spec.ts
+│       ├── deleteFuelAPI.spec.ts
+│       ├── editCarAPI.spec.ts
+│       ├── getInstructionAPI.spec.ts
+│       └── mockProfileAPI.spec.ts
 ├── test-results.json
-├── tests
-│   ├── addCarPositiveTests.spec.ts
-│   ├── api
-│   │   ├── addCarTestsAPI.spec.ts
-│   │   ├── deleteFuelTestsAPI.spec.ts
-│   │   ├── editCarTestsAPI.spec.ts
-│   │   ├── getInstructionAPI.spec.ts
-│   │   └── mockProfileTestAPI.spec.ts
-│   ├── auth.setup.ts
-│   ├── logInNegativeTests.spec.ts
-│   ├── logInPositiveTests.spec.ts
-│   ├── registrationNegativeTests.spec.ts
-│   └── registrationPositiveTests.spec.ts
 ├── tests.md
 └── tsconfig.json
 ```

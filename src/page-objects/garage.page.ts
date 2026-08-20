@@ -54,4 +54,8 @@ export class GaragePage extends BasePage {
 	get confirmRemoveButton(): Locator {
 		return this._page.locator(`[class="btn btn-danger"]`);
 	}
+
+	get carItem(): Locator {
+		return this._page.locator(`[class="car_name h2"]`);
+	}
 }

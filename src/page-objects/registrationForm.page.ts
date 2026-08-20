@@ -43,4 +43,50 @@ export class RegistrationForm extends BasePage {
 	get closeSignUp(): Button {
 		return new Button(this._page, `[class="close"]`);
 	}
+
+	get nameInvalid(): Locator {
+		return this._page.getByText('Name is invalid');
+	}
+
+	get nameCharacters(): Locator {
+		return this._page.getByText('Name has to be from 2 to 20 characters long');
+	}
+
+	get nameRequired(): Locator {
+		return this._page.getByText('Name required');
+	}
+
+	get lastNameInvalid(): Locator {
+		return this._page.getByText('Last name is invalid');
+	}
+
+	get lastNameCharacters(): Locator {
+		return this._page.getByText('Last name has to be from 2 to 20 characters long');
+	}
+
+	get lastNameRequired(): Locator {
+		return this._page.getByText('Last name required');
+	}
+
+	get emailIncorrect(): Locator {
+		return this._page.getByText('Email is incorrect');
+	}
+
+	get emailRequired(): Locator {
+		return this._page.getByText('Email required');
+	}
+
+	get passwordCharacters(): Locator {
+		return this._page.getByText(
+			'Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter',
+		);
+	}
+
+	get passwordRequired(): Locator {
+		return this._page.getByText('Password required');
+	}
+
+	get passwordMatch(): Locator {
+		return this._page.getByText('Passwords do not match');
+	}
 }
